@@ -1,0 +1,21 @@
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+
+  &-center {
+    text-align: center;
+  }
+
+  &-black {
+    color: #000;
+  }
+
+  &-white {
+    color: #fff;
+  }
+}
