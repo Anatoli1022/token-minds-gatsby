@@ -12,17 +12,17 @@ const Achievement = () => (
       <h2 className={cx('title', 'title-black', 'title-center')}>Our Achievement</h2>
       <ul className={cx('list')}>
         <li className={cx('item')}>
-          <img src={ellipse} alt="" className={cx('ellipse')} loading="lazy" aria-hidden="true" />
+          <img src={ellipse} alt="" className={cx('ellipse-1')} loading="lazy" aria-hidden="true" />
           <p className={cx('text')}>Credential</p>
           <span className={cx('item-achievement')}>Certified Expert</span>
         </li>
         <li className={cx('item')}>
-          <img src={ellipse} alt="" className={cx('ellipse')} loading="lazy" aria-hidden="true" />
+          <img src={ellipse} alt="" className={cx('ellipse-2')} loading="lazy" aria-hidden="true" />
           <p className={cx('text')}>Amount Raised</p>
           <span className={cx('item-achievement')}>$250MM</span>
         </li>
         <li className={cx('item')}>
-          <img src={ellipse} alt="" className={cx('ellipse')} loading="lazy" aria-hidden="true" />
+          <img src={ellipse} alt="" className={cx('ellipse-3')} loading="lazy" aria-hidden="true" />
           <p className={cx('text')}>Project Helped</p>
           <span className={cx('item-achievement')}>100+</span>
         </li>

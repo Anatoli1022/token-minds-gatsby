@@ -1,7 +1,68 @@
-.achievement{
-    margin-top: 120px;
+.achievement {
+  margin-top: 120px;
 }
 
-.list{
-    display: flex;
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 122px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 204px;
+  min-height: 204px;
+  margin-left: 144px;
+  text-align: center;
+  background: #faf1fa;
+  border-radius: 50%;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.ellipse-1 {
+  position: absolute;
+  top: -110px;
+  z-index: -1;
+  transform: rotate(-90deg);
+}
+
+.ellipse-2 {
+  position: absolute;
+  right: -50px;
+  z-index: -1;
+}
+
+.ellipse-3 {
+  position: absolute;
+  bottom: -110px;
+  z-index: -1;
+  transform: rotate(90deg);
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #676668;
+}
+
+.item-achievement {
+  max-width: 140px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #424143;
 }
