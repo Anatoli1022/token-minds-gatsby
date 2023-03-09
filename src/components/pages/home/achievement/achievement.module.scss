@@ -1,9 +1,13 @@
 .achievement {
+  padding-bottom: 160px;
   margin-top: 120px;
 }
 
 .list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  column-gap: 160px;
   align-items: center;
   justify-content: center;
   padding-left: 0;
@@ -20,14 +24,9 @@
   justify-content: center;
   min-width: 204px;
   min-height: 204px;
-  margin-left: 144px;
   text-align: center;
   background: #faf1fa;
   border-radius: 50%;
-
-  &:first-child {
-    margin-left: 0;
-  }
 }
 
 .ellipse-1 {
