@@ -7,6 +7,9 @@ import Hero from 'components/pages/home/hero';
 import Optimized from 'components/pages/home/optimized';
 import Choose from 'components/pages/home/choose';
 import Achievement from 'components/pages/home/achievement';
+import Awards from 'components/pages/home/awards';
+import About from 'components/pages/home/about';
+import Agency from 'components/pages/home/agency';
 
 const HomePage = () => (
   <Layout>
@@ -14,6 +17,9 @@ const HomePage = () => (
     <Optimized />
     <Choose />
     <Achievement />
+    <Awards />
+    <About />
+    <Agency />
   </Layout>
 );
 
