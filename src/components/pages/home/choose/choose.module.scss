@@ -11,6 +11,9 @@
 
 .list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 30px;
   align-items: center;
   justify-content: center;
   padding-left: 0;
@@ -22,12 +25,7 @@
 .item {
   max-width: 350px;
   padding: 30px 25px 35px 30px;
-  margin-left: 30px;
   background-color: #fdf4fd;
-
-  &:first-child {
-    margin-left: 0;
-  }
 }
 
 .item-title {
