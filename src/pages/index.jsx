@@ -10,6 +10,8 @@ import Achievement from 'components/pages/home/achievement';
 import Awards from 'components/pages/home/awards';
 import About from 'components/pages/home/about';
 import Agency from 'components/pages/home/agency';
+import Comments from 'components/pages/home/comments';
+import Clients from 'components/pages/home/clients';
 
 const HomePage = () => (
   <Layout>
@@ -20,6 +22,8 @@ const HomePage = () => (
     <Awards />
     <About />
     <Agency />
+    <Comments />
+    <Clients />
   </Layout>
 );
 
