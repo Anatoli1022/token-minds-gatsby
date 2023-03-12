@@ -12,6 +12,8 @@ import About from 'components/pages/home/about';
 import Agency from 'components/pages/home/agency';
 import Comments from 'components/pages/home/comments';
 import Clients from 'components/pages/home/clients';
+import Team from 'components/pages/home/team';
+import Media from 'components/pages/home/media';
 
 const HomePage = () => (
   <Layout>
@@ -24,6 +26,8 @@ const HomePage = () => (
     <Agency />
     <Comments />
     <Clients />
+    <Team />
+    <Media />
   </Layout>
 );
 
