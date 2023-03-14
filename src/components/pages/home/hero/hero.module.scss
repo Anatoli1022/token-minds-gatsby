@@ -3,6 +3,10 @@
   padding-top: 140px;
   padding-bottom: 60px;
   overflow: hidden;
+
+  @include sm-down {
+    padding-top: 100px;
+  }
 }
 
 .background {
@@ -27,6 +31,12 @@
   color: #ededed;
   text-transform: capitalize;
   letter-spacing: 0.03em;
+
+  @include sm-down {
+    max-width: 400px;
+    font-size: 30px;
+    line-height: 1.4;
+  }
 }
 
 .container-images {
@@ -36,4 +46,11 @@
   column-gap: 20px;
   max-width: 500px;
   margin-top: 35px;
+}
+
+.image {
+  @include sm-down {
+    max-width: 100px;
+    max-height: 25px;
+  }
 }
