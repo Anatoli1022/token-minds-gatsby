@@ -1,0 +1,122 @@
+.questions {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 100px;
+
+  @include sm-down {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.list {
+  padding-left: 0;
+  margin-top: 110px;
+  margin-bottom: 0;
+  list-style: none;
+
+  @include sm-down {
+    margin-top: 20px;
+  }
+}
+
+.item {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 2px solid rgb(0 0 0 / 10%);
+
+  &:first-child {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+  }
+
+  &-active {
+    .item-title::before {
+      transform: rotate(-40deg);
+    }
+
+    .item-title::after {
+      transform: rotate(40deg);
+    }
+
+    .item-text {
+      margin-top: 10px;
+
+      &:first-of-type {
+        margin-top: 18px;
+      }
+    }
+  }
+
+  @include sm-down {
+    padding-top: 10px;
+  }
+}
+
+.item-title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #000;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 50%;
+    width: 12px;
+    height: 3px;
+    content: '';
+    background-color: #000;
+    transition: all 0.3s ease 0s;
+  }
+
+  &::before {
+    right: 18px;
+    transform: rotate(40deg);
+
+    @include sm-down {
+      right: -22px;
+    }
+  }
+
+  &::after {
+    right: 10px;
+    transform: rotate(-40deg);
+
+    @include sm-down {
+      right: -30px;
+    }
+  }
+
+  @include sm-down {
+    max-width: 500px;
+  }
+
+  @include xs-down {
+    max-width: 240px;
+  }
+}
+
+.item-text {
+  max-width: 750px;
+  max-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 1.5;
+  transition: 0.2s;
+}
