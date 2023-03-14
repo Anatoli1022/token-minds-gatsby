@@ -1,0 +1,92 @@
+.download {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.text {
+  max-width: 640px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.container-form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  max-width: 920px;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include sm-down {
+    margin-top: 30px;
+  }
+}
+
+.input-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #000;
+}
+
+.input {
+  min-width: 442px;
+  min-height: 48px;
+  margin-top: 10px;
+  color: #000;
+  background: rgb(230 220 241 / 70%);
+  border: 1px solid rgb(200 0 200 / 30%);
+  border-radius: 6px;
+  outline: none;
+  opacity: 0.8;
+  transition: 0.2s;
+
+  &:focus-visible {
+    border: 1px solid rgb(200 0 200 / 100%);
+  }
+
+  @include sm-down {
+    min-width: 265px;
+  }
+}
+
+.button {
+  display: block;
+  min-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: rgb(200 0 200 / 100%);
+  border: 1px solid rgb(200 0 200 / 100%);
+  border-radius: 4px;
+  transition: 0.2s;
+
+  &:hover {
+    color: rgb(200 0 200 / 100%);
+    background: rgb(230 220 241 / 70%);
+  }
+
+  @include sm-down {
+    margin-top: 30px;
+  }
+}
