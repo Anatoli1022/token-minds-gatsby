@@ -15,7 +15,7 @@ const About = () => (
   <section className={cx('about')}>
     <div className={cx('container-large')}>
       <div className={cx('about-container')}>
-        <img src={image} alt="" loading="lazy" aria-hidden="true" className={cx('image')} />
+        <img src={image} alt="" loading="lazy" aria-hidden="true" className={cx('image-first')} />
 
         <div className={cx('about-info')}>
           <h2 className={cx('title', 'title-black')}>About TokenMinds</h2>
@@ -78,6 +78,7 @@ const About = () => (
           </p>
         </li>
       </ul>
+      <img src={image} alt="" loading="lazy" aria-hidden="true" className={cx('image-last')} />
     </div>
   </section>
 );
