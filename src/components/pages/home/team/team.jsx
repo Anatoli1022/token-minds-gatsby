@@ -11,8 +11,8 @@ const cx = classNames.bind(styles);
 const Team = () => (
   <section className={cx('team')}>
     <div className={cx('container', 'team-container')}>
-      <div>
-        <img src={team} alt="" loading="lazy" aria-hidden="true" />
+      <div className={cx('image-wrapper')}>
+        <img src={team} alt="" loading="lazy" aria-hidden="true" className={cx('team-image')} />
       </div>
       <div className={cx('information')}>
         <h2 className={cx('title', 'title-black')}>the team</h2>

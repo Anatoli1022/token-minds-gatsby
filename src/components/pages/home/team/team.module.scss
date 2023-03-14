@@ -2,16 +2,39 @@
   padding-top: 100px;
   padding-bottom: 50px;
   background-color: #f4f5fb;
+
+  @include sm-down {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
 }
 
 .team-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
+.image-wrapper {
+  @include sm-down {
+    order: 2;
+    margin-top: 40px;
+  }
+}
+
+.team-image {
+  @include sm-down {
+    width: 100%;
+  }
+}
+
 .information {
   margin-left: 50px;
+
+  @include sm-down {
+    margin-left: 0;
+  }
 }
 
 .text {
@@ -20,6 +43,10 @@
   margin-bottom: 0;
   font-size: 18px;
   line-height: 1.7;
+
+  @include sm-down {
+    line-height: 1.6;
+  }
 }
 
 .list {
