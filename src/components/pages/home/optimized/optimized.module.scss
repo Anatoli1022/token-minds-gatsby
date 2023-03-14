@@ -3,6 +3,11 @@
   padding-top: 110px;
   padding-bottom: 120px;
   overflow: hidden;
+
+  @include sm-down {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .background {
@@ -17,25 +22,24 @@
   object-position: top left;
 }
 
-.wrapper-packages {
+.packages-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-content: center;
   margin-top: 75px;
 
   @include sm-down {
-    display: none;
+    flex-direction: column;
   }
 }
 
 .package {
   position: relative;
   padding: 55px 20px 60px 25px;
-  margin-left: 30px;
   background: #fff;
   box-shadow: 0 6px 50px rgb(200 0 200 / 4%);
-
-  &:first-child {
-    margin-left: 0;
-  }
 
   &::before {
     position: absolute;

@@ -9,10 +9,10 @@ const cx = classNames.bind(styles);
 
 const Optimized = () => (
   <section className={cx('optimized')}>
-    <div className={cx('container')}>
+    <div className={cx('container-large')}>
       <img src={background} alt="" className={cx('background')} loading="lazy" aria-hidden="true" />
       <h2 className={cx('title', 'title-center', 'title-black')}>Our Optimized Packages</h2>
-      <div className={cx('wrapper-packages')}>
+      <div className={cx('packages-wrapper')}>
         <div className={cx('package')}>
           <h3 className={cx('package-title')}>Community Building Package</h3>
           <h4 className={cx('price')}>$ 3,000</h4>
