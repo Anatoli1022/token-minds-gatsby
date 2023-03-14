@@ -23,10 +23,10 @@ const Hero = () => (
       />
       <h1 className={cx('title')}>Web3 agency making dream projects a reality!</h1>
       <div className={cx('container-images')}>
-        <img src={news} alt="Hackernoon" loading="eager" />
-        <img src={btc} alt="New BTC" loading="eager" />
-        <img src={coin} alt="Coin Gape" loading="eager" />
-        <img src={hack} alt="News Affinity" loading="eager" />
+        <img src={news} alt="Hackernoon" loading="eager" className={cx('image')} />
+        <img src={btc} alt="New BTC" loading="eager" className={cx('image')} />
+        <img src={coin} alt="Coin Gape" loading="eager" className={cx('image')} />
+        <img src={hack} alt="News Affinity" loading="eager" className={cx('image')} />
       </div>
     </div>
   </section>
