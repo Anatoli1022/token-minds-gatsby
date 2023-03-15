@@ -13,11 +13,28 @@
   margin-top: 65px;
   margin-bottom: 0;
   list-style: none;
+
+  @include sm-down {
+    display: none;
+  }
 }
 
 .item {
+  height: 450px;
   padding: 30px 22px 44px;
   box-shadow: 0 2px 70px rgb(0 0 0 / 11%);
+
+  @include sm-down {
+    height: 350px;
+    padding: 20px;
+    box-shadow: 0 2px 70px rgb(0 0 0 / 6%);
+  }
+}
+
+.comment-image {
+  @include sm-down {
+    max-width: 100px;
+  }
 }
 
 .item-title {
@@ -28,6 +45,10 @@
   font-weight: 600;
   line-height: 1.6;
   color: #000;
+
+  @include sm-down {
+    margin-top: 10px;
+  }
 }
 
 .item-text {
@@ -36,4 +57,43 @@
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.6;
+
+  @include sm-down {
+    margin-top: 10px;
+  }
+}
+
+.wrapper {
+  :global {
+    .swiper {
+      display: none;
+
+      @include sm-down {
+        display: block;
+        margin-top: 60px;
+      }
+    }
+
+    .swiper-slide {
+      @include sm-down {
+        width: 300px !important;
+        max-height: 400px;
+      }
+    }
+
+    .swiper-pagination {
+      @include sm-down {
+        position: relative;
+        margin-top: 35px;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      @include sm-down {
+        width: 12px;
+        height: 12px;
+        background-color: #c800c8;
+      }
+    }
+  }
 }

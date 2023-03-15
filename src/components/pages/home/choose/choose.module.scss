@@ -1,5 +1,9 @@
 .choose {
   padding-top: 120px;
+
+  @include sm-down {
+    padding-top: 50px;
+  }
 }
 
 .text {
@@ -7,6 +11,12 @@
   margin-bottom: 0;
   font-size: 18px;
   text-align: center;
+
+  @include sm-down {
+    max-width: 275px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .list {
@@ -20,12 +30,38 @@
   margin-top: 40px;
   margin-bottom: 0;
   list-style: none;
+
+  @include sm-down {
+    margin-top: 30px;
+  }
 }
 
 .item {
+  position: relative;
   max-width: 350px;
   padding: 30px 25px 35px 30px;
+  overflow: hidden;
   background-color: #fdf4fd;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+
+.arrow-2 {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+.arrow-3 {
+  position: absolute;
+  top: -80px;
+  right: -95px;
+  transform: rotate(90deg);
 }
 
 .item-title {
@@ -45,4 +81,8 @@
   font-size: 16px;
   line-height: 1.7;
   text-transform: capitalize;
+
+  @include sm-down {
+    margin-top: 20px;
+  }
 }

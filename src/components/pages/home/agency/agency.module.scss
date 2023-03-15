@@ -11,6 +11,10 @@
   left: 0;
   height: 100%;
   overflow: hidden;
+
+  @include sm-down {
+    max-width: 100%;
+  }
 }
 
 .list {

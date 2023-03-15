@@ -7,6 +7,11 @@
   text-transform: capitalize;
   letter-spacing: 0.03em;
 
+  @include sm-down {
+    font-size: 40px;
+    text-align: center;
+  }
+
   &-center {
     text-align: center;
   }

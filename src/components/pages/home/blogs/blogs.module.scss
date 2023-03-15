@@ -1,0 +1,98 @@
+.blogs {
+  padding-top: 100px;
+
+  @include sm-down {
+    padding-top: 85px;
+  }
+}
+
+.image {
+  width: 100%;
+  filter: drop-shadow(0 2px 70px rgb(0 0 0 / 11%));
+}
+
+.information {
+  position: relative;
+  top: -200px;
+  left: 16px;
+  z-index: 1;
+  max-width: 317px;
+  padding: 37px 30px 60px 23px;
+  background-color: #fff;
+  box-shadow: 0 2px 70px rgb(0 0 0 / 11%);
+
+  @include sm-down {
+    top: -180px;
+    left: 10px;
+    max-width: 277px;
+    padding: 20px 20px 30px 18px;
+  }
+}
+
+.information-title {
+  max-width: 240px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #000;
+  text-transform: capitalize;
+
+  @include sm-down {
+    font-size: 18px;
+  }
+}
+
+.text {
+  max-width: 240px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  line-height: 1.6;
+
+  @include sm-down {
+    margin-top: 20px;
+  }
+}
+
+.wrapper {
+  :global {
+    .swiper {
+      margin-top: 80px;
+
+      @include sm-down {
+        margin-top: 50px;
+      }
+    }
+
+    .swiper-slide {
+      width: 350px !important;
+      max-height: 660px;
+
+      @include sm-down {
+        width: 300px !important;
+        max-height: 515px;
+      }
+    }
+
+    .swiper-pagination {
+      position: relative;
+      margin-top: 60px;
+
+      @include sm-down {
+        margin-top: 40px;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      background-color: #c800c8;
+
+      @include sm-down {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}

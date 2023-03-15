@@ -10,8 +10,14 @@ import Achievement from 'components/pages/home/achievement';
 import Awards from 'components/pages/home/awards';
 import About from 'components/pages/home/about';
 import Agency from 'components/pages/home/agency';
+import Download from 'components/pages/home/download';
+import Questions from 'components/pages/home/questions';
 import Comments from 'components/pages/home/comments';
 import Clients from 'components/pages/home/clients';
+import Team from 'components/pages/home/team';
+import Blogs from 'components/pages/home/blogs';
+import Media from 'components/pages/home/media';
+import Project from 'components/pages/home/project';
 
 const HomePage = () => (
   <Layout>
@@ -22,8 +28,14 @@ const HomePage = () => (
     <Awards />
     <About />
     <Agency />
+    <Download />
+    <Questions />
     <Comments />
     <Clients />
+    <Team />
+    <Blogs />
+    <Media />
+    <Project />
   </Layout>
 );
 

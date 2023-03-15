@@ -6,6 +6,7 @@ import styles from './choose.module.scss';
 import stop from './images/choose-one-stop.svg';
 import leader from './images/choose-leader.svg';
 import pricing from './images/choose-pricing.svg';
+import arrow from './images/choose-arrow.svg';
 
 const cx = classNames.bind(styles);
 
@@ -16,6 +17,7 @@ const Choose = () => (
       <p className={cx('text')}>Trusted by clients all across the globe</p>
       <ul className={cx('list')}>
         <li className={cx('item')}>
+          <img src={arrow} alt="" loading="lazy" aria-hidden="true" className={cx('arrow')} />
           <img src={stop} alt="" loading="lazy" aria-hidden="true" />
           <h3 className={cx('item-title')}>One-Stop Service Provider</h3>
           <p className={cx('item-text')}>
@@ -24,6 +26,7 @@ const Choose = () => (
           </p>
         </li>
         <li className={cx('item')}>
+          <img src={arrow} alt="" loading="lazy" aria-hidden="true" className={cx('arrow-2')} />
           <img src={leader} alt="" loading="lazy" aria-hidden="true" />
           <h3 className={cx('item-title')}>
             Industry
@@ -35,6 +38,7 @@ const Choose = () => (
           </p>
         </li>
         <li className={cx('item')}>
+          <img src={arrow} alt="" loading="lazy" aria-hidden="true" className={cx('arrow-3')} />
           <img src={pricing} alt="" loading="lazy" aria-hidden="true" />
           <h3 className={cx('item-title')}>Transparent Pricing</h3>
           <p className={cx('item-text')}>
